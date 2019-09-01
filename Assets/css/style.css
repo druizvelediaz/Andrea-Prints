@@ -1,0 +1,41 @@
+#navbar {
+    position: sticky;
+    top: 0%;
+}
+
+.card-header-tabs {
+    width:500px;
+    position:sticky;
+    transform: translateX(100%);
+}
+
+.card-header{
+    border-bottom: 0px;
+}
+
+.nav-item {
+    color: black;
+}
+
+a{
+    color: rgb(114, 114, 114);
+}
+
+a:hover {
+    background-color: whitesmoke;
+    border-bottom: 0px;
+    color: black;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: whitesmoke;
+    border-bottom-color:whitesmoke;
+}
+
+#aboutMeBase {
+    top: 100%;
+    position: absolute;
+    height: 3000px;
+    width: 100%;
+    background: whitesmoke;
+}
