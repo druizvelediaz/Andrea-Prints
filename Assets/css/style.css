@@ -1,12 +1,22 @@
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 #navbar {
     position: sticky;
     top: 0%;
+    z-index: 90;
 }
 
 .card-header-tabs {
     width:500px;
     position:sticky;
-    transform: translateX(100%);
+    transform: translateX(95.5%);
 }
 
 .card-header{
@@ -19,6 +29,7 @@
 
 a{
     color: rgb(114, 114, 114);
+    cursor: pointer;
 }
 
 a:hover {
