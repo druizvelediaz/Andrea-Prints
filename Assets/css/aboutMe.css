@@ -1,3 +1,11 @@
+#aboutMeBase {
+    top: 100%;
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    background: whitesmoke;
+}
+
 #titleRow{
     padding: 10px;
     margin-top: 60px;

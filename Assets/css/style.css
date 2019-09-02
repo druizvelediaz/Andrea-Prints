@@ -16,7 +16,9 @@ body{
 .card-header-tabs {
     width:500px;
     position:sticky;
-    transform: translateX(95.5%);
+    margin:auto;
+    padding-left: 8.8%;
+    padding-right: 8%;
 }
 
 .card-header{
@@ -41,12 +43,4 @@ a:hover {
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     background-color: whitesmoke;
     border-bottom-color:whitesmoke;
-}
-
-#aboutMeBase {
-    top: 100%;
-    position: absolute;
-    height: 3000px;
-    width: 100%;
-    background: whitesmoke;
 }
