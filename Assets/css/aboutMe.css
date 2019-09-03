@@ -45,12 +45,6 @@ i{
     color: rgb(189, 189, 189);
 }
 
-#footer{
-    background: rgb(214, 214, 214);
-    height: 200px;
-    width: 100%;
-}
-
 i:hover{
     font-size:50px;
     position: relative;

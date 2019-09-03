@@ -16,10 +16,11 @@
 
 <body>
     <img style="z-index:-99; position: fixed; left:50%; transform: translateX(-50%); overflow: hidden; width:110%;"
-        src="Assets/Images/Background-3.jpg" >
-        <div style = "z-index: -50;box-shadow: 0 0 150px rgba(0,0,0,1) inset; height:100%; width: 100%; position:fixed;">
-        </div>
-    <img src="Assets/Images/Border.png" style="position:absolute; left:50%; transform: translateX(-50%); top:15%; width: 90%;">
+        src="Assets/Images/Background-3.jpg">
+    <div style="z-index: -50;box-shadow: 0 0 150px rgba(0,0,0,1) inset; height:100%; width: 100%; position:fixed;">
+    </div>
+    <img src="Assets/Images/Border.png"
+        style="position:absolute; left:50%; transform: translateX(-50%); top:15%; width: 90%;">
     <h1
         style="text-align:center;font-family: Georgia, 'Times New Roman', Times, serif; color: white; font-size: 150px; widows: 60%; height: 80%;position: absolute; left:50%; transform: translateX(-50%); top: 20%;">
         Andrea's Art</h1>
@@ -28,7 +29,7 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutMe.html" onclick="changeTab(this)">About Me</a>
+                        <a class="nav-link" href="#" onclick="changeTab(this); changeScreen(0);">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" onclick="changeTab(this)">Prints</a>
@@ -39,12 +40,19 @@
                 </ul>
             </div>
         </div>
-        <div id="footer" style="top:97%; position: relative; background: rgb(60,60,60);
-        background: linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(108,108,108,1) 10%, rgba(138,138,138,1) 100%);
-        ">
-            <a style = "background: transparent;" href = "#">
+        <!-- <div id="footer" style="top:97%; position: relative; background: rgb(60,60,60);
+            background: linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(108,108,108,1) 10%, rgba(138,138,138,1) 100%);
+            ">
+            <a style="background: transparent;" href="#">
                 <i style="margin: 10px;" class="fab fa-instagram fa-3x"></i>
             </a>
+        </div> -->
+        <footer id="footer">
+            <a style="background: transparent;" href="#">
+                <i style="margin: 10px;" class="fab fa-instagram fa-3x"></i>
+            </a>
+        </footer>
+        <div id="Change">
         </div>
     </div>
     <script src="Assets/js/app.js"></script>
