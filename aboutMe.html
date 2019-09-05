@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/style.css">
-    <link rel="stylesheet" href="Assets/css/aboutMe.css">
     <title>Andrea's Art</title>
 </head>
 
@@ -29,13 +28,13 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" onclick="changeTab(this)">About Me</a>
+                        <a class="nav-link active" onclick="changeTab(this); changeScreen(0);">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="prints.html" onclick="changeTab(this)">Prints</a>
+                        <a class="nav-link" onclick="changeTab(this); changeScreen(1);">Prints</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="changeTab(this); changeScreen(0);">Paintings</a>
+                        <a class="nav-link" onclick="changeTab(this); changeScreen(2);">Paintings</a>
                     </li>
                 </ul>
             </div>
