@@ -22,16 +22,16 @@ function changeScreen(n) {
             break;
         case 1:
             document.getElementById('Change').innerHTML = `
-            <div class="card print-card" style="width: 480px;">
-            <img style="background:url(file:///C:/Users/druiz/Desktop/CodingProjects/Andrea-Prints/Assets/Images/Background-3.JPG); height: 100%;" src="Assets/Images/See-Through.png" width=100%;>
+            <div class="card print-card" style="width: 480px; display: inline-block;">
+            <img style="background:url(Assets/Images/Background-3.JPG); height: 100%;" src="Assets/Images/See-Through.png" width=100%;>
             <div class="card-body">
                 <h5 class="card-title Info">Iron Man</h5>                
                 <p class="card-text Info">7in x 11in</p>
                 <p class="card-text Info">40$</p>
             </div>
             </div>
-            <div class="card print-card" style="width: 480px;">
-            <img style="background:url(file:///C:/Users/druiz/Desktop/CodingProjects/Andrea-Prints/Assets/Images/Background-3.JPG); height: 100%;" src="Assets/Images/See-Through.png" width=100%;>
+            <div class="card print-card" style="width: 480px; display: inline-block;">
+            <img style="background:url(Assets/Images/Background-3.JPG); height: 100%;" src="Assets/Images/See-Through.png" width=100%;>
             <div class="card-body">
                 <h5 class="card-title Info">Iron Man</h5>                
                 <p class="card-text Info">7in x 11in</p>
