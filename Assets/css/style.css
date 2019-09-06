@@ -14,12 +14,10 @@ body {
 }
 
 .card-header-tabs {
-    width: 500px;
+    width: 276.416657px;
     position: sticky;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 8.8%;
-    padding-right: 8%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card-header {
@@ -51,18 +49,18 @@ a:not([href]):not([tabindex]) {
     text-decoration: none;
 }
 
-.print-card{
-    margin:10px;
+.print-card {
+    margin: 10px;
     border: 1px black solid;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
-.card-body{
+.card-body {
     position: relative;
     margin: auto;
 }
 
-.Info{
+.Info {
     text-align: center;
 }
 
@@ -73,8 +71,8 @@ footer {
     height: 200px;
     width: 100%;
     overflow: hidden;
-    background: rgb(60,60,60);
-    background: linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(108,108,108,1) 10%, rgba(138,138,138,1) 100%);
+    background: rgb(60, 60, 60);
+    background: linear-gradient(180deg, rgba(60, 60, 60, 1) 0%, rgba(108, 108, 108, 1) 10%, rgba(138, 138, 138, 1) 100%);
 }
 
 #aboutMeBase {
@@ -85,7 +83,7 @@ footer {
     background: whitesmoke;
 }
 
-#titleRow{
+#titleRow {
     padding: 10px;
     margin-top: 60px;
     margin-left: 20px;
@@ -97,7 +95,7 @@ footer {
     border-style: solid;
 }
 
-#pfp{
+#pfp {
     position: relative;
     margin-top: 30px;
     border: 2px;
@@ -106,11 +104,11 @@ footer {
     border-color: black;
     border-radius: 50%;
     border-style: solid;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
-#Title{
+#Title {
     margin-top: 15px;
     position: absolute;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -120,14 +118,36 @@ footer {
     /* transform: translateY(-50%); */
 }
 
-i{
+i {
     color: rgb(189, 189, 189);
 }
 
-i:hover{
-    font-size:50px;
+i:hover {
+    font-size: 50px;
     position: relative;
     top: -2px;
     left: -1px;
     color: rgb(0, 68, 255);
+}
+
+::-webkit-scrollbar {
+    width: 1%;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 140, 255);
 }
