@@ -1,7 +1,7 @@
 var fileName;
 
 function Title() {
-    var title = `<img src="Assets/Images/Border.png" style="position:absolute; left:50%; transform: translateX(-50%); top:15%; width: ${screen.width / 1.1};">`;
+    var title = `<img src="Assets/Images/Border.png" style="position:absolute; left:50%; transform: translateX(-50%); top:15%; width: ${screen.width / 1.2}px;">`;
     var h = `<h1 style="text-align:center;font-family: Georgia, 'Times New Roman', Times, serif; color: white; font-size: ${screen.width / 8.5}px; widows: 60%; height: 80%;position: absolute; left:50%; transform: translateX(-50%); top: 20%; width: ${screen.width / 2}px;">Andrea's Art</h1>`;
     var disp = $(h);
     $(`Body`).append(disp);
