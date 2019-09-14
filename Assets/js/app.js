@@ -1,8 +1,9 @@
 var fileName;
 
 function Title() {
-    wide = screen.width / 8.5;
-    var h = `<h1 style="text-align:center;font-family: Georgia, 'Times New Roman', Times, serif; color: white; font-size: ${wide}px; widows: 60%; height: 80%;position: absolute; left:50%; transform: translateX(-50%); top: 20%;">Andrea's Art</h1>`;
+    var wide = screen.width / 8.5;
+    var wide2 = screen.width / 2;
+    var h = `<h1 style="text-align:center;font-family: Georgia, 'Times New Roman', Times, serif; color: white; font-size: ${wide}px; widows: 60%; height: 80%;position: absolute; left:50%; transform: translateX(-50%); top: 20%; width: ${wide2}px;">Andrea's Art</h1>`;
     var disp = $(h);
     $(`Body`).append(disp);
 }
