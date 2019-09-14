@@ -1,3 +1,41 @@
+var fileName;
+
+function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            xhttp = this.responseText;
+            console.log(xhttp);
+            doStuff(xhttp);
+        }
+    };
+    xhttp.open("get", "https://raw.githubusercontent.com/druizvelediaz/system1/master/Cards/ironMan.txt", true);
+    xhttp.send();
+}
+
+function doStuff(content) {
+    var Objects = JSON.parse(content);
+    for (var i = 0; i < Objects.length; i++) {
+        console.log(Objects[i].title);
+        var switcher = i%2;
+        switch(switcher){
+        case 0:
+            switcher = "col1";
+            break;
+        case 1:
+            switcher = "col2";
+            break;
+        }
+        var url = `<img style = "left: 50%; transform: translateX(-50%); position: relative; width: 480px; border: solid 2px black" src="https://raw.githubusercontent.com/druizvelediaz/system1/master/Cards/${Objects[i].image}"></img>`;
+        var image = $(url);
+        $(`#${switcher}`).append(image);
+        var title = `<h1 style = "left: 50%; transform: translateX(-50%); position: relative; text-align: center;">${Objects[i].title}</h1>`
+        var dispTitle = $(title);
+        $(`#${switcher}`).append(dispTitle);
+        console.log(i);
+    }
+}
+
 function changeTab(n) {
     var Active = document.getElementsByClassName('active');
     Active[0].classList.remove('active');
@@ -23,29 +61,11 @@ function changeScreen(n) {
         case 1:
             document.getElementById('Change').innerHTML = `
             <div class="row">
-            <div class="col-sm-5" style = "position: absolute; right:50%; padding: 10px;">
-                <div class="card print-card" style="width: 480px; margin: auto;">
-                    <img style="background:url(Assets/Images/Background-3.JPG); height: 100%;"
-                        src="Assets/Images/See-Through.png" width=100%;>
-                    <div class="card-body">
-                        <h5 class="card-title Info">Iron Man</h5>
-                        <p class="card-text Info">7in x 11in</p>
-                        <p class="card-text Info">40$</p>
-                    </div>
+                <div class="col-sm-5" id = "col1" style = "position: absolute; right:50%; padding: 10px;">
+                </div>
+                <div class="col-sm-5" id = "col2" style = "position: absolute; left:50%; padding: 10px;">
                 </div>
             </div>
-            <div class="col-sm-5" style = "position: absolute; left:50%; padding: 10px;">
-                <div class="card print-card" style="width: 480px; margin: auto;">
-                    <img style="background:url(Assets/Images/Background-3.JPG); height: 100%;"
-                        src="Assets/Images/See-Through.png" width=100%;>
-                    <div class="card-body">
-                        <h5 class="card-title Info">Iron Man</h5>
-                        <p class="card-text Info">7in x 11in</p>
-                        <p class="card-text Info">40$</p>
-                    </div>
-                </div>
-            </div>
-        </div>
             `
             break;
         case 2:
