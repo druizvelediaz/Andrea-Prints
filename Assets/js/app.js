@@ -1,5 +1,12 @@
 var fileName;
 
+function Title() {
+    wide = screen.width / 8.5;
+    var h = `<h1 style="text-align:center;font-family: Georgia, 'Times New Roman', Times, serif; color: white; font-size: ${wide}px; widows: 60%; height: 80%;position: absolute; left:50%; transform: translateX(-50%); top: 20%;">Andrea's Art</h1>`;
+    var disp = $(h);
+    $(`Body`).append(disp);
+}
+
 function loadDoc() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -9,7 +16,7 @@ function loadDoc() {
             doStuff(xhttp);
         }
     };
-    xhttp.open("get", "https://raw.githubusercontent.com/druizvelediaz/system1/master/Cards/ironMan.txt", true);
+    xhttp.open("get", "https://raw.githubusercontent.com/druizvelediaz/Andrea-Prints/master/Assets/data.txt", true);
     xhttp.send();
 }
 
@@ -17,16 +24,16 @@ function doStuff(content) {
     var Objects = JSON.parse(content);
     for (var i = 0; i < Objects.length; i++) {
         console.log(Objects[i].title);
-        var switcher = i%2;
-        switch(switcher){
-        case 0:
-            switcher = "col1";
-            break;
-        case 1:
-            switcher = "col2";
-            break;
+        var switcher = i % 2;
+        switch (switcher) {
+            case 0:
+                switcher = "col1";
+                break;
+            case 1:
+                switcher = "col2";
+                break;
         }
-        var url = `<img style = "left: 50%; transform: translateX(-50%); position: relative; width: 480px; border: solid 2px black" src="https://raw.githubusercontent.com/druizvelediaz/system1/master/Cards/${Objects[i].image}"></img>`;
+        var url = `<img style = "left: 50%; transform: translateX(-50%); position: relative; width: 80%; border: solid 2px black" src="https://raw.githubusercontent.com/druizvelediaz/system1/master/Cards/${Objects[i].image}"></img>`;
         var image = $(url);
         $(`#${switcher}`).append(image);
         var title = `<h1 style = "left: 50%; transform: translateX(-50%); position: relative; text-align: center;">${Objects[i].title}</h1>`
